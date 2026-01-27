@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your Energy - fitness app to transform your physique with comprehensive exercises, nutrition support and workout tracking." />
+    <meta
+      name="description"
+      content="Your Energy - your favorite exercises collection. Save and access your preferred workouts easily."
+    />
     <meta name="theme-color" content="#242424" />
 
     <link rel="icon" type="image/svg+xml" href="/your-energy/favicon.svg" />
     <link rel="preconnect" href="https://your-energy.b.goit.study" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
 
-    <title>Your Energy | Home</title>
+    <title>Your Energy | Favorites</title>
 
     <script type="module" crossorigin src="/your-energy/assets/vendor-B3yUAu1b.js"></script>
     <script type="module" crossorigin src="/your-energy/assets/main-7rFOHJh_.js"></script>
     <link rel="stylesheet" crossorigin href="/your-energy/assets/main-DMZTWQlz.css">
   </head>
-
-  <body>
+  <body class="favorites-page">
     <header class="header" role="banner">
   <div class="container">
     <nav class="header__nav" aria-label="Main navigation">
@@ -108,150 +109,67 @@
   </div>
   <div class="mobile-menu__overlay"></div>
 </div>
-      <section class="hero">
+      <section class="favorites">
   <div class="container">
-    <h1 class="hero-title">
-      <svg class="menu-button-icon" width="38" height="38">
-        <use href="/your-energy/assets/sprite-eSk4e8_i.svg#hero-title"></use>
-      </svg>
-      <span class="line1">Get <i>Body</i> in</span>
-      <span class="line2">shape, Stay healthy</span>
-    </h1>
-    <p class="hero-description">
-      Transform your physique and embrace a healthier lifestyle with our
-      comprehensive fitness and nutrition support.
-    </p>
-    <div class="hero-main-image">
-      <picture>
-        <source
-          media="(min-width: 1440px)"
-          srcset="/your-energy/assets/hero-main-image-desktop@1x-B0nF6HWI.webp 1x, /your-energy/assets/hero-main-image-desktop@2x-CToFrm-J.webp 2x"
-        />
-        <source
-          media="(min-width: 768px)"
-          srcset="/your-energy/assets/hero-main-image-tablet@1x-Dx6u5XTE.webp 1x, /your-energy/assets/hero-main-image-tablet@2x-BxUKa_ks.webp 2x"
-        />
-        <img
-          src="/your-energy/assets/hero-main-image-mobile@1x-ZoC-FLvs.webp"
-          srcset="/your-energy/assets/hero-main-image-mobile@1x-ZoC-FLvs.webp 1x, /your-energy/assets/hero-main-image-mobile@2x-ByrW9EPL.webp 2x"
-          alt="Women in sportswear working out outdoors"
-          fetchpriority="high"
-        />
-      </picture>
-    </div>
-    <ul class="tags-container">
-      <li><button type="button" class="tag" data-tag="sport">#Sport</button></li>
-      <li><button type="button" class="tag" data-tag="healthy">#Healthy</button></li>
-      <li><button type="button" class="tag" data-tag="workout">#Workout</button></li>
-      <li><button type="button" class="tag" data-tag="diet">#Diet</button></li>
-    </ul>
-    <div class="hero-secondary-image">
-      <img
-        srcset="/your-energy/assets/hero-secondary-image@1x-BtADEuRY.png 1x, /your-energy/assets/hero-secondary-image@2x-DGjGLME0.png 2x"
-        src="/your-energy/assets/hero-secondary-image@1x-BtADEuRY.png"
-        alt="Young women doing fitness outdoors together"
-        loading="lazy"
-      />
-    </div>
-  </div>
-</section>
-
-      <section class="exercises">
-  <div class="container">
-    <div class="exercises-header">
-      <div class="exercises-breadcrumbs">
-        <button aria-label="Exercises" class="breadcrumb-home">
-          <span class="exercises-title">Exercises</span>
-        </button>
-        <span class="exercises-title breadcrumb-divider">/</span>
-        <span class="breadcrumb-current"></span>
+    <h1>Favorites</h1>
+    <div class="favorites__main">
+      <div class="favorites__quote quote">
+        <article class="quote__article">
+          <div class="quote__logo">
+            <svg class="icon" width="34" height="32">
+              <use href="/your-energy/assets/sprite-eSk4e8_i.svg#running-stick-figure-border"></use>
+            </svg>
+          </div>
+          <div class="quote__body">
+            <div class="quote__top">
+              <h2 class="quote__ttl">Quote of the day</h2>
+              <svg class="icon" width="24" height="24">
+                <use href="/your-energy/assets/sprite-eSk4e8_i.svg#commas"></use>
+              </svg>
+            </div>
+            <p class="quote__text">
+              A lot of times I find that people who are blessed with the most
+              talent don't ever develop that attitude, and the ones who aren't
+              blessed in that way are the most competitive and have the biggest
+              heart.
+            </p>
+            <p class="quote__author">Tom Brady</p>
+          </div>
+        </article>
+        <ul class="quote__daily-list">
+          <li class="quote__daily-item">
+            <div class="quote__daily-icon">
+              <svg class="icon" width="24" height="24">
+                <use href="/your-energy/assets/sprite-eSk4e8_i.svg#gym"></use>
+              </svg>
+            </div>
+            <p class="quote__time-value">110 min</p>
+            <p class="quote__sports">Daily norm of sports</p>
+          </li>
+          <li class="quote__daily-image">
+            <img
+              srcset="/your-energy/assets/image-mobile-CNOTOV2O.jpg 1x, /your-energy/assets/image-mobile@2x-D09j71c4.jpg 2x"
+              src="/your-energy/assets/image-mobile-CNOTOV2O.jpg"
+              alt="Young women doing fitness outdoors together"
+              loading="lazy"
+              width="335"
+              height="242"
+            />
+          </li>
+        </ul>
       </div>
-      <div class="filter-search-wrapper">
-        <form class="form-search hide-show-transition hide" id="search-form">
-          <label class="search-label" for="exercises-filter"></label>
-          <input type="text" class="search-input hide" id="exercises-filter" placeholder="Search exercises..." />
-          <svg class="icon-search" width="20" height="20" viewBox="0 0 18 18" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8.25 14.25C11.5637 14.25 14.25 11.5637 14.25 8.25C14.25 4.93629 11.5637 2.25 8.25 2.25C4.93629 2.25 2.25 4.93629 2.25 8.25C2.25 11.5637 4.93629 14.25 8.25 14.25Z"
-              stroke="#242424" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-            <path d="M15.7498 15.75L12.4873 12.4875" stroke="#242424" stroke-width="1.5" stroke-linecap="round"
-              stroke-linejoin="round" />
-          </svg>
-          <button class="clear-search" type="button" aria-label="Clear search">x</button>
-        </form>
-        <ul class="exercises-categories"></ul>
-      </div>
-    </div>
-    <div class="exercises-container">
-      <div class="exercises-info">
-  <div class="quote-container">
-    <svg width="34" height="32">
-      <use href="/your-energy/assets/sprite-eSk4e8_i.svg#quote"></use>
-    </svg>
-
-    <div>
-      <div class="quote-header">
-        <h2 class="quote-title">Quote of the day</h2>
-        <svg width="20" height="20">
-          <use href="/your-energy/assets/sprite-eSk4e8_i.svg#commas"></use>
-        </svg>
-      </div>
-      <div class="js-quote"></div>
-    </div>
-  </div>
-
-  <div class="img-quote">
-    <img
-      src="/your-energy/assets/women_des-SUywO1b9.jpg"
-      srcset="/your-energy/assets/women_mob-D6Tkr3Y4.jpg 335w, /your-energy/assets/women_mob@2x-DG9PE0aW.jpg 670w, /your-energy/assets/women_pla-CyMysZHu.jpg 704w, /your-energy/assets/women_pla@2x-DUvYgUAZ.jpg 1408w, /your-energy/assets/women_des-SUywO1b9.jpg 1112w, /your-energy/assets/women_des@2x-CB0ziqi4.jpg 2224w"
-      sizes="
-            (max-width: 767px) 335px,
-            (max-width: 1439px) 704px,
-            1112px
-          "
-      alt="Two girls"
-      class="image"
-      width="335"
-      height="242"
-      loading="lazy"
-    />
-  </div>
-
-  <div class="box2-info">
-    <svg class="news-icon">
-      <use href="/your-energy/assets/sprite-eSk4e8_i.svg#icon-running-man"></use>
-    </svg>
-    <div class="box2-info-content">
-      <h3 class="time-info-title">110 min</h3>
-      <p class="text-info-subtitle">Daily norm of sports</p>
-      <p class="text-info">
-        The World Health Organization recommends at least 150 minutes of
-        moderate-intensity aerobic physical activity throughout the week for
-        adults aged 18-64. However, what happens if we adjust that number to 110
-        minutes every day? While it might seem like a high number to hit,
-        dedicating 110 minutes daily to sporting activities may offer
-        unparalleled benefits to physical health, mental well-being, and overall
-        quality of life.
-      </p>
-    </div>
-  </div>
-</div>
-
-      <div class="exercises-content hide-show-transition">
-        <div class="exercises-list"></div>
-        <ul class="exercises-pagination"></ul>
-      </div>
-      <div class="filtered-exercises-cards-wrapper hide-show-transition hide">
-        <ul class="filtered-exercises-list"></ul>
-        <div class="filtered-pagination"></div>
+      <div class="favorites__body">
+        <ul class="favorites__list"></ul>
+        <p class="favorites__empty">
+          It appears that you haven't added any exercises to your favorites yet.
+          To get started, you can add exercises that you like to your favorites
+          for easier access in the future.
+        </p>
       </div>
     </div>
   </div>
 </section>
 
-      
-      
       <div id="exercise-modal" class="modal-overlay"></div>
 
       <div id="give-rating-modal" class="modal-overlay"></div>
