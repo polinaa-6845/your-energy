@@ -1,0 +1,137 @@
+.header {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 24px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__burger-btn {
+  height: 32px;
+}
+
+.header__socials {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .header__burger-btn {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+    padding: 8px 34px;
+    border-radius: 60px;
+    background-color: var(--primary);
+    box-shadow: var(--shadow);
+  }
+
+  .header__menu-item {
+    display: flex;
+    border-radius: 30px;
+    background: var(--primary);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--white);
+    transition: var(--transition-fast);
+    transition-property: background-color;
+  }
+
+  .header__menu-item:hover,
+  .header__menu-item:focus {
+    background-color: color-mix(in srgb, var(--primary-light) 20%, transparent);
+  }
+
+  .header__menu-item--active .header__menu-link {
+    border-radius: 30px;
+    background: var(--white);
+    color: var(--primary);
+  }
+
+  .header__menu-link {
+    width: auto;
+    height: 100%;
+    padding: 6px 12px;
+  }
+
+  .header__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0;
+  }
+
+  .header__social-item {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: 1px solid var(--primary-disabled);
+    border-radius: 10px;
+    transition: var(--transition-fast);
+    transition-property: background-color;
+  }
+
+  .header__social-item:hover {
+    background-color: var(--primary);
+  }
+
+  .header__social-item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .header__social-item svg {
+    fill: var(--primary);
+    transition: var(--transition-fast);
+    transition-property: fill;
+  }
+
+  .header__social-item:hover svg {
+    fill: var(--white);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header {
+    padding-top: 28px;
+  }
+
+  .header__menu {
+    padding: 8px 50px;
+  }
+}
+
+button {
+  display: block;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}

@@ -1,18 +1,17 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-/* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import 'modern-normalize/modern-normalize.css';
+@import 'izitoast/dist/css/iziToast.min.css';
+@import './common.css';
+@import './font.css';
+@import './variables.css';
+@import './reset.css';
+@import './layout/header.css';
+@import './layout/footer.css';
+@import './exercises.css';
+@import './hero.css';
+@import './favorites.css';
+@import './burger-menu.css';
+@import './exercise-modal.css';
+@import './rating-modal.css';
+@import './categories.css';
+@import './filtered-exercises.css';
+@import './breadcrumbs.css';

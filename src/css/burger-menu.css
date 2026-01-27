@@ -1,0 +1,133 @@
+.mobile-menu__sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+
+  background-color: var(--primary);
+
+  transform: translateX(100%);
+  transition: var(--transition);
+}
+
+.mobile-menu__sidebar.is-open {
+  pointer-events: auto;
+
+  transform: translateX(0);
+  transition: var(--transition-fast);
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu__sidebar {
+    display: none;
+  }
+}
+
+.mobile-menu__close-btn {
+  align-self: flex-end;
+  height: 32px;
+  padding: 0;
+
+  color: var(--primary-light);
+
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-menu__nav {
+  margin-top: 228px;
+  margin-bottom: auto;
+}
+
+.mobile-menu__nav a {
+  display: block;
+  margin-bottom: 16px;
+
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-light);
+}
+
+.mobile-menu__nav li:last-child a {
+  margin-bottom: 0;
+}
+
+.mobile-menu__socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.mobile-menu__social-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border: 1px solid #f4f4f41a;
+  border-radius: 10px;
+}
+
+.mobile-menu__social-item:focus {
+  background-color: rgba(244, 244, 244, 1);
+
+  transform: scale(1.1);
+}
+
+.mobile-menu__social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+
+  fill: var(--primary-light);
+}
+
+.mobile-menu__social-icon:focus {
+  fill: var(--primary);
+
+  transform: scale(1.1);
+}
+
+.mobile-menu__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+
+  background-color: rgba(var(--rgba-bg-color), 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+}
+
+.mobile-menu__overlay.is-open {
+  opacity: 1;
+}

@@ -1,0 +1,36 @@
+.exercises-breadcrumbs {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+
+.breadcrumb-home {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.breadcrumb-divider {
+  display: none;
+  font-size: 28px;
+  margin: 0 16px;
+  color: var(--primary);
+}
+
+.breadcrumb-divider.is-active {
+  display: inline;
+}
+
+.breadcrumb-current {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 767px) {
+  .breadcrumb-divider.is-active {
+    display: none;
+  }
+}
